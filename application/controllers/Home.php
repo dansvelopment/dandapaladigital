@@ -24,7 +24,7 @@ class Home extends CI_Controller
       'footerClass' => 'footer-wrapper footer-layout2 bg-transparent'
     ];
     $this->load->vars($data);
-    $this->load->view('home');
+    $this->load->view('front/v_home');
   }
 
   public function showDetailArticle($slug)
@@ -38,7 +38,7 @@ class Home extends CI_Controller
         'article' => $detailArticle
       ];
       $this->load->vars($data);
-      $this->load->view('article_detail');
+      $this->load->view('front/v_article_detail');
     }
 
   }
@@ -54,7 +54,7 @@ class Home extends CI_Controller
         'majalah' => $detailMajalah
       ];
       $this->load->vars($data);
-      $this->load->view('majalah_detail');
+      $this->load->view('front/v_majalah_detail');
     }
 
   }
